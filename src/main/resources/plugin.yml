@@ -1,0 +1,31 @@
+name: ServerWorld
+version: 1.0.0
+main: com.enderdevelopment.plugin.Main
+api-version: "1.21"
+commands:
+  spawn:
+    description: Teleport to spawn and shop.
+  wild:
+    description: Use the protected wild portal.
+  shop:
+    description: View the economy shop.
+  buy:
+    description: Buy a shop item.
+  balance:
+    description: Show your balance.
+  kills:
+    description: Show your kill counter.
+  job:
+    description: Select or view a job.
+  afk:
+    description: Toggle AFK earning.
+  mg:
+    description: Join or leave a minigame.
+  rank:
+    description: View or buy a rank.
+  serveradmin:
+    description: Manage server systems.
+    permission: serverworld.admin
+permissions:
+  serverworld.admin:
+    default: op

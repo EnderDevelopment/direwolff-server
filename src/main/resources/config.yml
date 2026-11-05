@@ -1,0 +1,90 @@
+spawn:
+  world: world
+  x: 0.5
+  y: 100.0
+  z: 0.5
+  yaw: 0.0
+  pitch: 0.0
+wild:
+  world: world
+  x: 300.5
+  y: 80.0
+  z: 300.5
+portals:
+  wild-radius: 3.0
+  minigame-radius: 3.0
+afk:
+  interval-seconds: 60
+  payout: 5.0
+  max-balance-payouts: 120
+  require-no-movement-seconds: 90
+events:
+  minimum-minutes: 15
+  maximum-minutes: 30
+  duration-seconds: 180
+  mob-drop-multiplier: 2
+  effects:
+    - DOUBLE_DROPS
+    - SPEED
+    - WEAKNESS
+    - GLASS_CANNON
+shop:
+  items:
+    bread: {material: BREAD, amount: 16, price: 10}
+    iron: {material: IRON_INGOT, amount: 8, price: 40}
+    diamond: {material: DIAMOND, amount: 1, price: 100}
+ranks:
+  member: {price: 0, permission: serverworld.rank.member}
+  knight: {price: 500, permission: serverworld.rank.knight}
+  lord: {price: 1500, permission: serverworld.rank.lord}
+jobs:
+  assassin:
+    night-damage: 2.0
+    night-speed: 0.2
+  lumberjack:
+    break-speed: 1.8
+boss:
+  world: world
+  interval-minutes: 45
+  health: 120.0
+  name: '&5Worldbreaker'
+  x-min: -500
+  x-max: 500
+  z-min: -500
+  z-max: 500
+  loot: [DIAMOND, GOLDEN_APPLE, NETHERITE_SCRAP]
+structure:
+  world: world
+  interval-minutes: 30
+  radius: 1000
+minigames:
+  spleef:
+    world: world
+    min-x: 20
+    max-x: 40
+    min-z: 20
+    max-z: 40
+    y: 100
+    reward: 100
+  pvp:
+    world: world
+    min-x: 60
+    max-x: 90
+    min-z: 20
+    max-z: 50
+    y: 100
+    reward: 125
+  buildbattle:
+    world: world
+    min-x: 110
+    max-x: 150
+    min-z: 20
+    max-z: 60
+    y: 100
+    reward: 150
+chunk-effects:
+  enabled: true
+  worlds: [world]
+  chance: 0.08
+  duration-seconds: 120
+  effects: [EXTRA_DROPS, SPEED, HAZARD, GLASS_CANNON]
